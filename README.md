@@ -1,0 +1,3 @@
+### Educative.io - Grokking the Coding Interview - Patterns for Coding Questions
+* Coding interview problems into a set of 16 patterns. Each pattern will be a complete tool - consisting of data structures, algorithms, and analysis techniques - to solve a specific category of problems. The goal is to build an understanding of the underlying pattern so that we can apply that pattern to solve other problems.
+* The problems solved under these patterns use a varied set of algorithmic techniques. Breadth-First Search and Depth-First Search to solve problems related to Trees and Graphs. Similarly,this course also cover Dynamic Programming, Backtracking, Recursion, Greedy algorithms, and Divide & Conquer.
