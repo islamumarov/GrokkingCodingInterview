@@ -14,6 +14,7 @@ def has_cycle(head):
 
     return False
 
+
 if __name__ == '__main__':
     head = Node(1)
     head.next = Node(2)
