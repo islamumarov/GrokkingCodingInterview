@@ -1,7 +1,4 @@
-class Node:
-    def __init__(self, value, next=None):
-        self.value = value
-        self.next = next
+from GrokkingCodingInterview.TwoPointers.node import Node
 
 
 def has_cycle(head):
