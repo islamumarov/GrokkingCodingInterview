@@ -9,6 +9,3 @@ class middle_of_linkedlist:
             fast = fast.next.next
         return slow
 
-
-
-if __name__ == '__main__':
