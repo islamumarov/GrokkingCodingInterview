@@ -1,4 +1,4 @@
-from GrokkingCodingInterview.TwoPointers.node import Node
+from node import Node
 
 
 class start_of_linkedlist_cycle:
