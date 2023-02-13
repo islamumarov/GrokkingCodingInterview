@@ -1,7 +1,9 @@
-from node import Node
-
-
 class start_of_linkedlist_cycle:
+    class Node:
+        def __init__(self, data):  # data -> value stored in node
+            self.data = data
+            self.next = None
+ 
     def find_first_node(self, head, cycle_len):
         slow = fast = head
         while cycle_len > 0:
@@ -37,13 +39,13 @@ class start_of_linkedlist_cycle:
 
 if __name__ == '__main__':
     solution = start_of_linkedlist_cycle()
-    head = Node(1)
-    head.next = Node(2)
-    head.next.next = Node(3)
-    head.next.next.next = Node(4)
-    head.next.next.next.next = Node(5)
-    head.next.next.next.next.next = Node(6)
-    head.next.next.next.next.next.next = Node(7)
+    head = solution.Node(1)
+    head.next = solution.Node(2)
+    head.next.next = solution.Node(3)
+    head.next.next.next = solution.Node(4)
+    head.next.next.next.next = solution.Node(5)
+    head.next.next.next.next.next = solution.Node(6)
+    head.next.next.next.next.next.next = solution.Node(7)
     head.next.next.next.next.next.next.next = head.next.next
 
     cycle_node = solution.find_cycle_start(head)
