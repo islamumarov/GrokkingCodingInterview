@@ -1,9 +1,5 @@
+from GrokkingCodingInterview.TwoPointers.node import Node
 class start_of_linkedlist_cycle:
-    class Node:
-        def __init__(self, data):  # data -> value stored in node
-            self.data = data
-            self.next = None
- 
     def find_first_node(self, head, cycle_len):
         slow = fast = head
         while cycle_len > 0:

@@ -1,5 +1,4 @@
-from node import Node
-
+from GrokkingCodingInterview.TwoPointers.node import Node
 
 class palindrome_linkedlist:
     def is_palindromic_linkedlist(self, head: Node):
