@@ -1,4 +1,6 @@
-from node import Node
+from GrokkingCodingInterview.TwoPointers.node import Node
+
+
 def has_cycle(head):
     fast = slow = head
     while fast and fast.next:

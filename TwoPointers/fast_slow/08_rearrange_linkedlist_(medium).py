@@ -1,4 +1,4 @@
-from node import Node
+from GrokkingCodingInterview.TwoPointers.node import Node
 # https://leetcode.com/problems/reorder-list/description/
 
 class rearrange_linkedlist:
