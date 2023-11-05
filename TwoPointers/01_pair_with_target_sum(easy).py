@@ -1,15 +1,3 @@
-def search(nums, target):
-    left, right = 0, len(nums)-1
-    while left < right:
-        sum = nums[left] + nums[right]
-        if sum == target:
-            return [left+1, right+1]
-        if sum > target:
-            right -= 1
-        else:
-            left += 1
-
-    return [-1, -1]
 
 
 if __name__ == '__main__':

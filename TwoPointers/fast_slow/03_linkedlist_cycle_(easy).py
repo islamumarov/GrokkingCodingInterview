@@ -1,15 +1,3 @@
-from GrokkingCodingInterview.TwoPointers.node import Node
-
-
-def has_cycle(head):
-    fast = slow = head
-    while fast and fast.next:
-        fast = fast.next.next
-        slow = slow.next
-        if fast == slow:
-            return True
-
-    return False
 
 
 if __name__ == '__main__':
