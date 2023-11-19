@@ -1,8 +1,21 @@
 
 from typing import List
 
+#Given an array, find the average of all contiguous subarrays of size ‘K’ in it.
 
-def find_average_of_subarrays(nums: List, k: int):
+
+def find_averages_of_subarrays(nums: List[int], k: int):
+        avg = []
+        window_start = 0
+        window_sum = 0
+        for i in range(0, len(nums)):
+              window_sum += nums[i]
+              if i - window_start+1 == k:
+                    avg.append(window_sum/k)
+                    window_sum -= nums[window_start]
+                    window_start += 1
+        
+        return avg
 
 
 if __name__ == '__main__':
