@@ -15,7 +15,7 @@ def smallest_subarray_with_given_sum(s, arr):
     if min_length == float('inf'):
         return 0
     return min_length
-    
+        
 
 
 if __name__ == '__main__':
