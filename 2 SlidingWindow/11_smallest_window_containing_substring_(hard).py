@@ -1,4 +1,4 @@
-class Solution:
+class smallest_window_containing_substring:
     def find_substring(self, s, t):
         s_dict, t_dict = {}, {}
         min_window = s+"1"
@@ -32,5 +32,6 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print(find_substring("aa", "aa"))
-    print(find_substring("ADOBECODEBANC", "ABC"))
+    sol = smallest_window_containing_substring()
+    print(sol.find_substring("aa", "aa"))
+    print(sol.find_substring("ADOBECODEBANC", "ABC"))
