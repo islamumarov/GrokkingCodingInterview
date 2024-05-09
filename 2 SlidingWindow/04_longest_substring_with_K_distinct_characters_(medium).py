@@ -1,21 +1,16 @@
-def longest_substring_with_k_distinct(str, k):
-    longest = -1
-    dict = {}
-    window_start = 0
-    for j, i in enumerate(str):
-        if i in dict:
-            dict[i] +=1
-        else:
-            dict[i] = 1
-        while(len(dict) > k):
-            dict[str[window_start]] -= 1
-            if dict[str[window_start]] == 0:
-                del dict[str[window_start]]
-            window_start += 1
-        longest = max(longest, j - window_start + 1)
-    return longest
+def lengthOfLongestSubstring(s: str) -> int:
+    Window_start = 0
+    freq = {}
+    Max_len = -1
+    for i in range(0, len(s)):
+        while s[i] in freq:
+            del freq[s[Window_start]]
+            Window_start += 1
+        freq[s[i]] = 1
+        Max_len = max(Max_len, i - Window_start + 1)
+    return Max_len
 
 
 if __name__ == '__main__':
-    print("Length of the longest substring: " + str(longest_substring_with_k_distinct("araaci", 2)))
-    print("Length of the longest substring: " + str(longest_substring_with_k_distinct("cbbebi", 3)))
+    print("Length of the longest substring: " + str(lengthOfLongestSubstring("abcabcbb")))
+    print("Length of the longest substring: " + str(lengthOfLongestSubstring("bbbbb")))
