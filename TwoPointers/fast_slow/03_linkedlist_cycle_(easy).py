@@ -1,3 +1,4 @@
+# Given the head of a singly linked list, reverse the linked list and return its updated head.
 
 
 if __name__ == '__main__':
