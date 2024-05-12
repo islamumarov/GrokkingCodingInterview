@@ -1,7 +1,14 @@
+from typing import Optional
+
+from InPlaceReverse.reverse_sub_list import ReverseSubList
+
+
 class Node:
     def __init__(self, data):  # data -> value stored in node
         self.data = data
         self.next = None
+
+
 
 def reverse(head):
     next = None
@@ -27,7 +34,9 @@ if __name__ == '__main__':
     for num in nums:
         head.next = Node(num)
         head = head.next
-    new_head = reverse(node)
+    # new_head = reverse(node)
+    reverse_sub_list = ReverseSubList()
+    new_head = reverse_sub_list.reverse_sub(node, 2, 4)
 
     while new_head.next is not None:
         print(new_head.data)
