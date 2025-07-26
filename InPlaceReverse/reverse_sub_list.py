@@ -1,6 +1,6 @@
 from typing import Optional
 
-from TwoPointers.node import Node
+from node import Node
 
 
 class ReverseSubList:
